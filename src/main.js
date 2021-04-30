@@ -5,4 +5,9 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  methods: {
+    getRandomNumber: () => {
+      return Math.floor(Math.random() * 5);
+    },
+  }
 }).$mount('#app')
